@@ -1,0 +1,60 @@
+/*SECCION HEADER */ 
+
+.contenedorTitulo {
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(120deg,#F2C105,#115290);
+}
+.contenedorTitulo h1 {
+    color:#115290;
+    margin: 0;
+}
+
+/*SECCION FORMULARIO*/
+.contenedorFormulario {
+    margin: 1rem;
+    text-align: center;
+}
+.contenedorFormulario label {
+    color: #115290;
+    font-weight: bolder;
+    margin-right: 1rem ;
+}
+
+.contenedorFormulario input {
+    outline: none;
+    border: 1px solid #115290;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 1rem;
+}
+
+.contenedorFormulario button {
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background: linear-gradient(120deg,#F2C105,#115290);
+    width: 10rem;
+    height: 1.7rem;
+    cursor: pointer;
+}
+
+/*SECCION FORMULARIO - SUGERENCIA DE VALOR DEL INPUT*/
+.contenedorFormulario .contenedorSugerencia {
+    display: none;
+}
+
+.contenedorFormulario .contenedorSugerencia div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.contenedorFormulario .contenedorSugerencia div p {
+    background-color: #115290;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-weight: bolder;
+    width: 45%;
+    padding: .3rem 0;
+}
