@@ -2,19 +2,21 @@ import './App.css';
 import TituloPrincipal from './components/TituloPrincipal.js'
 import Formulario from './components/Formulario.js'
 import Pokemon from './components/Pokemon.js'
+import ManejadorDeContexto from './context/ManejadorDeContexto.js';
 
 function App() {
-  console.log(document.getElementById('formulario').value)
   return (
     <>
       <header>
         <TituloPrincipal></TituloPrincipal>
       </header>
       <main>
-        <Formulario></Formulario>
-        <section>
-          <Pokemon></Pokemon>
-        </section>
+        <ManejadorDeContexto>
+          <Formulario/>
+          <section>
+            <Pokemon/>
+          </section>
+        </ManejadorDeContexto>
       </main>
     </>
   );

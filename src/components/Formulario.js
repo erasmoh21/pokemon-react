@@ -1,10 +1,12 @@
-import React, {useRef} from 'react'
+import React, {useRef,useContext} from 'react'
+import ContextCentral from '../context/ContextCentral.js'
 import SugerenciaInput from './SugerenciaInput.js'
 import manejadorPeticiones from './manejadorPeticiones.js'
 
 export default function Formulario() {
     const contenedorSugerencia = useRef()
     const valorInput = useRef()
+    const {getPokemon}  = useContext(ContextCentral)
 
     const validarInput = async (e) => {
         e.preventDefault()
@@ -15,7 +17,8 @@ export default function Formulario() {
         } 
         else {
             contenedorSugerencia.current.style.display = "none"
-            const peticionRecibida = await manejadorPeticiones(valorInput.current.value)
+            const response = await manejadorPeticiones(valorInput.current.value.trim()) 
+            getPokemon(response)
         }
     }
 
