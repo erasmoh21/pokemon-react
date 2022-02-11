@@ -4,6 +4,7 @@ import Formulario from './components/Formulario.js'
 import Pokemon from './components/Pokemon.js'
 
 function App() {
+  console.log(document.getElementById('formulario').value)
   return (
     <>
       <header>
@@ -14,7 +15,6 @@ function App() {
         <section>
           <Pokemon></Pokemon>
         </section>
-
       </main>
     </>
   );
