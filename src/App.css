@@ -68,3 +68,27 @@ body {
     width: 45%;
     padding: .3rem 0;
 }
+
+/*CONTENEDOR POKEMON*/
+
+.contenedorPrincipalPokemon {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.contenedorPrincipalPokemon .contenedorElementosPokemon {
+    text-align: center;
+    background-color: #eee;
+    width: 30%;
+    height: 30%;
+    border-radius: 5px;
+}
+
+.contenedorPrincipalPokemon .contenedorElementosPokemon .tituloPokemon {
+    display: inline-flex;
+    color: #FFFFFF;
+    background: linear-gradient(120deg,#F2C105,#115290);
+    padding: 4px 10px;
+    margin-bottom: 0;
+    border-radius: 5px;
+}
