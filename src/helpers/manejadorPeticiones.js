@@ -5,7 +5,7 @@
  */
 
 export default async function manejadorPeticiones(datosDePeticion={}) {
-  const url = `${datosDePeticion.url}\\${datosDePeticion.data}`;
+  const url = `${datosDePeticion.url}${datosDePeticion.data}`;
   const peticion = await fetch(url);
   const data = await peticion.json();
 

@@ -17,7 +17,7 @@ export default function Formulario() {
         } 
         else {
             contenedorSugerencia.current.style.display = "none"
-            const response = await manejadorPeticiones({url:"https://pokeapi.co/api/v2/pokemon",data:valorInput.current.value.toLowerCase().trim()}) 
+            const response = await manejadorPeticiones({url:"https://pokeapi.co/api/v2/pokemon/",data:valorInput.current.value.toLowerCase().trim()}) 
             getPokemon(response)
         }
     }
