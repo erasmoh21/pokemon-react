@@ -2,6 +2,7 @@ import React,{useRef,useContext} from 'react'
 import ContextCentral from '../context/ContextCentral.js'
 import {SugerenciaInputNumeroPokemones} from './SugerenciaInputNumeroPokemones.js'
 import manejadorPeticiones from '../helpers/manejadorPeticiones.js'
+import Pokemones from './Pokemones.js'
 
 export default function FormularioNumeroPokemones() {
     const refSugerenciaInputNumerosPokemones = useRef()
